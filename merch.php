@@ -25,7 +25,7 @@ $produkt = [
 
   <div class="container">
     <header>
-        <a href="index.html">Hem</a> | <a href="about.html">Kontakta oss</a>
+        <a href="index.html">Home</a>  <a href="about.html">About us</a>
         <h1>WildHogs</h1>
         <p>Dessa är våra högkvalitativa produkter!</p>
     </header>
