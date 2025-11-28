@@ -175,3 +175,26 @@ body.overlay-active .overlay {
 
 
 .photos { position: relative; z-index: 6; }
+
+nav {
+  padding: 10px;
+  text-align: center;
+}
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+footer {
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
