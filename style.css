@@ -26,4 +26,14 @@ header, footer {
     grid-template-rows: auto 1fr auto;
 }
 
-
+.photos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  justify-content: center;
+  gap: 10px;
+}
+.photos img {
+  width: 300px;
+  height: auto;
+  border-radius: 5px;
+}
