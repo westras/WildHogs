@@ -5,6 +5,7 @@ $produkt = [
   [ 'img' => 'https://purepng.com/public/uploads/large/purepng.com-motorcyclemotorcyclemotorbikebikecycleracing-bike-17015275103511jxam.png', 'name' => 'Motorcykel' ],
   [ 'img' => 'https://shop.lindroths.se/storage/product_images/5/PremierHjalmTyphoonFRY9BM_D445935_c601dceec4c8381ef745bcbd47ce56c2_1.png', 'name' => 'Hjälm' ],
   [ 'img' => 'https://deliciasculinarias.com.br/wp-content/uploads/2019/12/torresmo-hist%C3%B3ria-da-gastronomia-no-brasil-300x197.png', 'name' => 'VildsvinKött' ],
+   [ 'img' => 'https://pngimg.com/uploads/knife/knife_PNG106121.png', 'name' => 'kniv' ],
 ];
 ?>
 <!doctype html>
@@ -24,7 +25,7 @@ $produkt = [
         <p>Dessa är våra högkvalitativa produkter!</p>
     </header>
 
-    <section class="grid" aria-label="Medarbetare">
+    <section class="photos" aria-label="Produkter">
       <?php foreach($produkt as $p): ?>
         <article class="card" role="article">
           <img src="<?=htmlspecialchars($p['img'])?>" alt="<?=htmlspecialchars($p['name'])?>">
