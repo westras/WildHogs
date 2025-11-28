@@ -19,20 +19,20 @@ header, footer {
   background-color: #333;
   color: #fff;
   text-align: center;
-  padding: 1em 0;
+
 }
 
 article {
   background: #fff;
-  margin: 20px;
-  padding: 20px;
+  margin: 10px;
+  padding: 5px;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   justify-self: center;
 }
 
 .main {
-    padding: 20px;
+    padding: 5px;
     min-height: calc(100vh - 100px);
     overflow-y: hidden;
 }
@@ -48,8 +48,8 @@ article {
 
 .photos img {
   flex: 0 0 400px;
-  width: 400px;
-  height: 300px;
+  width: 370px;
+  height: 270px;
   border-radius: 5px;
   position: relative;
 }
