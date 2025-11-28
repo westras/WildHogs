@@ -9,7 +9,7 @@ $produkt = [
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Olles AB — Om oss</title>
-    <link rel="stylesheet" href="style/om.css">
+    <link rel="stylesheet" href="style/merch.css">
 </head>
 <body>
   <div class="container">
