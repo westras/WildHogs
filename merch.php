@@ -1,6 +1,10 @@
 <?php
 $produkt = [
-    
+  [ 'img' => 'https://cdn.pixabay.com/photo/2020/07/30/09/00/tent-5449836_960_720.png', 'name' => 'Tält' ],
+  [ 'img' => 'https://shoplab.b-cdn.net/skistar_production/media-library/24073/A581543_c_1.png', 'name' => 'Stormkök' ],
+  [ 'img' => 'https://purepng.com/public/uploads/large/purepng.com-motorcyclemotorcyclemotorbikebikecycleracing-bike-17015275103511jxam.png', 'name' => 'Motorcykel' ],
+  [ 'img' => 'https://shop.lindroths.se/storage/product_images/5/PremierHjalmTyphoonFRY9BM_D445935_c601dceec4c8381ef745bcbd47ce56c2_1.png', 'name' => 'Hjälm' ],
+  [ 'img' => 'https://deliciasculinarias.com.br/wp-content/uploads/2019/12/torresmo-hist%C3%B3ria-da-gastronomia-no-brasil-300x197.png', 'name' => 'VildsvinKött' ],
 ];
 ?>
 <!doctype html>
@@ -8,15 +12,16 @@ $produkt = [
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Olles AB — Om oss</title>
-    <link rel="stylesheet" href="style/merch.css">
+  <title>WildHogs</title>
+    <link rel="stylesheet" href="merch.css">
 </head>
+
 <body>
   <div class="container">
     <header>
-        <a href="index.html">Hem</a> | <a href="Contact.html">Kontakta oss</a>
-        <h1>Olles AB</h1>
-        <p>Företaget är verksamt sedan 1948. Organisation: STYR (3), PROD (10), UTV (3), IT (1), SALG (2).</p>
+        <a href="index.html">Hem</a> | <a href="about.html">Kontakta oss</a>
+        <h1>WildHogs</h1>
+        <p>Dessa är våra högkvalitativa produkter!</p>
     </header>
 
     <section class="grid" aria-label="Medarbetare">
