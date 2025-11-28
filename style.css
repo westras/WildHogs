@@ -29,13 +29,15 @@ header, footer {
 .photos {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  justify-content: center;
+  justify-content: space-around;
   gap: 10px;
   overflow-x: scroll;
+  width: 1200px;
 }
 .photos img {
   width: 350px;
   height: 250px;
   border-radius: 5px;
+  position: relative;
 }
 
