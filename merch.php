@@ -32,6 +32,9 @@ $produkt = [
         <p>Dessa är våra högkvalitativa produkter!</p>
     </header>
 
+    
+    <div id="cart-count" aria-live="polite">0</div>
+
     <section class="photos" aria-label="Produkter">
       <?php foreach($produkt as $p): ?>
         <article class="card" role="article" tabindex="0">

@@ -87,6 +87,8 @@ nav {
 nav a {
   color: white;
   margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
 }
 nav a:hover {
   text-decoration: underline;
@@ -200,4 +202,17 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+#cart-count {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  background: #111;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 8px;
+  z-index: 100000;
+  font-weight: 700;
+  font-family: inherit;
 }
