@@ -49,7 +49,7 @@ $produkt = [
     </section>
   </div>
 <footer>
-            
+        &copy;WildHogs    
 </footer>
 </body>
 </html>
