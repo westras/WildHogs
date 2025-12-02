@@ -50,19 +50,19 @@ footer { bottom: 0; }
 
 
 nav {
+  
+  padding: 10px;
   text-align: center;
-  margin: 12px auto;
-  max-width: 1100px;
 }
 nav a {
-  color: #fff;
-  margin: 0 10px;
+  color: white;
+  margin: 0 15px;
   text-decoration: none;
-  font-weight: 700;
-  padding: 6px 8px;
-  border-radius: 6px;
+  font-weight: bold;
 }
-nav a[aria-current="page"] { background: rgba(255,255,255,0.06); }
+nav a:hover {
+  text-decoration: underline;
+  }
 
 
 .cards {
