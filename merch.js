@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
       body.classList.remove('overlay-active');
     });
 
-    // keyboard accessibility
+    
     card.addEventListener('focus', () => {
       body.classList.add('overlay-active');
       card.classList.add('active');
