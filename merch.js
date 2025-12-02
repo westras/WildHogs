@@ -1,35 +1,35 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const cards = document.querySelectorAll('.card');
-  const body = document.body;
-
-  cards.forEach(card => {
-    card.addEventListener('mouseenter', () => {
-      body.classList.add('overlay-active');
-      card.classList.add('active');
-    });
-    card.addEventListener('mouseleave', () => {
-      card.classList.remove('active');
-      body.classList.remove('overlay-active');
-    });
-    card.addEventListener('focus', () => {
-      body.classList.add('overlay-active');
-      card.classList.add('active');
-    }, true);
-    card.addEventListener('blur', () => {
-      card.classList.remove('active');
-      body.classList.remove('overlay-active');
-    }, true);
-  });
-
-
-  let count = 0;
+  const cards = Array.from(document.querySelectorAll('.card'));
   const counterEl = document.getElementById('cart-count');
-  if (counterEl) counterEl.textContent = String(count);
+  const STORAGE_KEY = 'wildhogs_cart_total';
+
+  
+  let total = parseInt(localStorage.getItem(STORAGE_KEY) || '0', 10) || 0;
+
+  const parsePrice = s => {
+    if (!s) return 0;
+    const digits = String(s).replace(/[^\d]/g, ''); 
+    return parseInt(digits || '0', 10);
+  };
+  const formatPrice = n => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' kr';
+
+  const updateUI = () => {
+    if (counterEl) counterEl.textContent = formatPrice(total);
+  };
+
+  updateUI();
 
   cards.forEach(card => {
     card.addEventListener('click', () => {
-      count += 1;
-      if (counterEl) counterEl.textContent = String(count);
+     
+      const priceStr = card.dataset.price || card.querySelector('.price')?.textContent || '0';
+      const value = parsePrice(priceStr);
+      if (value <= 0) return; 
+
+      total += value;
+      localStorage.setItem(STORAGE_KEY, String(total));
+      updateUI();
+
       card.classList.add('added');
       setTimeout(() => card.classList.remove('added'), 300);
     });
